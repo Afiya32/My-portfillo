@@ -2,7 +2,14 @@ import { NavLink, Outlet } from "react-router-dom";
 import logo from '../images/logo/logo-profile-4-removebg-preview.png'
 import Footer from "../Components/Footer";
 
+
+
 const Home = () => {
+  const handleDownLoad=()=>{
+  
+  
+
+  }
     return (
        <div>
          <div className="drawer">
@@ -48,6 +55,7 @@ const Home = () => {
                           ? "text-white p-2"
                           : ""
                       }>contact me</NavLink> </li>
+                      <li><button onClick={handleDownLoad} className="btn btn-outline btn-accent">MY-resume</button></li>
                   
                 </ul>
               </div>
@@ -87,6 +95,8 @@ const Home = () => {
                           ? "text-white p-2"
                           : ""
                       }>contact me</NavLink> </li>
+                       <li><button onClick={handleDownLoad} className="btn btn-outline btn-accent text-center">MY-resume</button></li>
+                  
             </ul>
           </div>
         </div>

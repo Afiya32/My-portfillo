@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet';
 import design from '../../images/withoutbg/Capture-removebg-preview.png'
 import background from '../../images/Design/bg.jpg'
+import Hero from '../../Components/Hero';
 
 const HomeComponent = () => {
     return (
@@ -26,7 +27,10 @@ const HomeComponent = () => {
       </h1>
     </div>
           
-            <p className='text-xl font-semibold'>I'm a Font-End-Web Developer</p>
+            <p className='text-xl font-semibold'>I am a Font-End-Web Developer</p>
+          </div>
+          <div>
+            <Hero/>
           </div>
           
         </div>
