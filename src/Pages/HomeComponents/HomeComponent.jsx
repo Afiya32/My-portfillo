@@ -1,15 +1,16 @@
 import { Helmet } from 'react-helmet';
-import design from '../../images/Design/Capture.png'
+import design from '../../images/withoutbg/Capture-removebg-preview.png'
+import background from '../../images/Design/bg.jpg'
 
 const HomeComponent = () => {
     return (
-        <div className='max-w-2/3 mt-3 mx-auto'>
+        <div className='w-full  min-h-[80vh] mt-3 mx-auto bg-cover' style={{ backgroundImage: `url(${background})` }}>
             <Helmet>
                 <title>BH || Home</title>
             </Helmet>
-            <div className='max-w-2/3 mt-3 mx-auto'>
-                <img src={design} alt="" />
-          </div>
+            <div className="w-2/3 flex justify-center items-center mt-3 pt-3 mx-auto " >
+        <img src={design} alt="" />
+      </div>
           <div className='text-center mt-3'>
           <div className='text-center mt-3 relative'>
       <h1 className='text-4xl font-bold relative group'>
@@ -25,7 +26,7 @@ const HomeComponent = () => {
       </h1>
     </div>
           
-            <p>I'm a Font-End-Web Developer</p>
+            <p className='text-xl font-semibold'>I'm a Font-End-Web Developer</p>
           </div>
           
         </div>
