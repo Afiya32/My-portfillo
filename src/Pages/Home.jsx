@@ -1,11 +1,18 @@
 import { NavLink, Outlet } from "react-router-dom";
 import logo from '../images/logo/logo-profile-4-removebg-preview.png'
 import Footer from "../Components/Footer";
+import pdf from "../images/Resume/myResume.pdf"
 
 
 
 const Home = () => {
   const handleDownLoad=()=>{
+    const anchor = document.createElement('a');
+    anchor.href = pdf; // Set the href to the path of your PDF file
+    anchor.download = 'MyResume.pdf'; // Set the desired download file name
+
+    // Trigger a click on the anchor to start the download
+    anchor.click();
   
   
 

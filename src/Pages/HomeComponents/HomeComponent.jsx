@@ -27,7 +27,7 @@ const HomeComponent = () => {
       </h1>
     </div>
           
-            <p className='text-xl font-semibold'>I am a Font-End-Web Developer</p>
+            <p className='text-xl font-semibold'>I am a Front-End-Web Developer</p>
           </div>
           <div>
             <Hero/>
